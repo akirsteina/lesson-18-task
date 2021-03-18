@@ -12,6 +12,21 @@ for (let i = 0; i <= 100; i++) {
     }
 }
 
+for (let i = 100; i <= 200; i++) {
+    let output = '';
+    if (i % 2 == 0) {
+        output += 'Fizz ';
+    }
+    if (i % 3 == 0) {
+        output += 'Bazz ';
+    }
+    if (!output) {
+        output = i;
+    }
+
+    console.log(output);
+}
+
 // task 2 - every 7th number from 1000 to 50 - odd/even
 console.log('Task 2: count backwards from 100 to 50 by 7');
 for (let i = 1000; i >= 50; i -= 7) {
